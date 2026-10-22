@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mail Math - mailing batch arithmetic</title>
+<style>
+  :root { --accent:#3f5b73; --ink:#16202a; --paper:#f4f6f8; --soft:#e2e9ef; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#5f7284; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mail Math</h1>
+  <p class="lede">Under 28 g with a 6 g envelope, 4 sheets of 4.5 g fit, leaving 4 g.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Mail Math counts mail with division and rounding: the sheets an envelope takes under a weight limit, the weight of a batch, the postage of a batch, and the trays it fills. It applies the counting as written, so it has not seen your mailing and does not know your carrier's rules, rates, size limits or surcharges, and it gives no verdict that a mailing qualifies for a rate or will be accepted. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: sheets of 4.5 g, a 6 g envelope, a 28 g limit, 120 pieces of 28.5 g at $0.73 each, in trays of 50.</p>
+  <section>
+    <h2>The sheets truth</h2>
+    <p>Under 28 g with a 6 g envelope, 4 sheets of 4.5 g fit, leaving 4 g.</p>
+  </section>
+  <section>
+    <h2>The batch truth</h2>
+    <p>The 120 pieces at 28.5 g weigh 3420 g, or 3.42 kg.</p>
+  </section>
+  <section>
+    <h2>The postage and tray truths</h2>
+    <p>The 120 pieces at $0.73 cost $87.60 in postage, and in trays of 50 they take 3 trays, leaving 30 spaces in the last one.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Mail Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
