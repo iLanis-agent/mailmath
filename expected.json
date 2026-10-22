@@ -1,0 +1,977 @@
+{
+ "cases": [
+  {
+   "fn": "sheets",
+   "args": [
+    "4.5",
+    "6",
+    "28"
+   ],
+   "expect": "Under 28 g with a 6 g envelope, 4 sheets of 4.5 g fit, leaving 4 g."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "120",
+    "28.5"
+   ],
+   "expect": "The 120 pieces at 28.5 g weigh 3420 g, or 3.42 kg."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "120",
+    "0.73"
+   ],
+   "expect": "The 120 pieces at $0.73 cost $87.60 in postage."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "120",
+    "50"
+   ],
+   "expect": "The 120 pieces in trays of 50 takes 3 trays, leaving 30 spaces in the last one."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "519.56",
+    "697.92",
+    "30899.67"
+   ],
+   "expect": "Under 30899.67 g with a 697.92 g envelope, 58 sheets of 519.56 g fit, leaving 67.27 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "598.97",
+    "249.12",
+    "75850.57"
+   ],
+   "expect": "Under 75850.57 g with a 249.12 g envelope, 126 sheets of 598.97 g fit, leaving 131.23 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "378.85",
+    "551.42",
+    "29928.09"
+   ],
+   "expect": "Under 29928.09 g with a 551.42 g envelope, 77 sheets of 378.85 g fit, leaving 205.22 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "341.15",
+    "992.02",
+    "50318.35"
+   ],
+   "expect": "Under 50318.35 g with a 992.02 g envelope, 144 sheets of 341.15 g fit, leaving 200.73 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "416.38",
+    "671.39",
+    "3790.33"
+   ],
+   "expect": "Under 3790.33 g with a 671.39 g envelope, 7 sheets of 416.38 g fit, leaving 204.28 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "627.87",
+    "326.87",
+    "40194.93"
+   ],
+   "expect": "Under 40194.93 g with a 326.87 g envelope, 63 sheets of 627.87 g fit, leaving 312.25 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "595.77",
+    "852.37",
+    "76294.34"
+   ],
+   "expect": "Under 76294.34 g with a 852.37 g envelope, 126 sheets of 595.77 g fit, leaving 374.95 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "592.24",
+    "384.58",
+    "70366.2"
+   ],
+   "expect": "Under 70366.2 g with a 384.58 g envelope, 118 sheets of 592.24 g fit, leaving 97.3 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "945.62",
+    "449.92",
+    "8589.26"
+   ],
+   "expect": "Under 8589.26 g with a 449.92 g envelope, 8 sheets of 945.62 g fit, leaving 574.38 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "163.05",
+    "78.24",
+    "65855.45"
+   ],
+   "expect": "Under 65855.45 g with a 78.24 g envelope, 403 sheets of 163.05 g fit, leaving 68.06 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "842.85",
+    "48.38",
+    "70961.28"
+   ],
+   "expect": "Under 70961.28 g with a 48.38 g envelope, 84 sheets of 842.85 g fit, leaving 113.5 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "539.95",
+    "890.32",
+    "29301.01"
+   ],
+   "expect": "Under 29301.01 g with a 890.32 g envelope, 52 sheets of 539.95 g fit, leaving 333.29 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "796.47",
+    "53.7",
+    "82402.42"
+   ],
+   "expect": "Under 82402.42 g with a 53.7 g envelope, 103 sheets of 796.47 g fit, leaving 312.31 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "651.73",
+    "495.09",
+    "34620.64"
+   ],
+   "expect": "Under 34620.64 g with a 495.09 g envelope, 52 sheets of 651.73 g fit, leaving 235.59 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "952.84",
+    "554.66",
+    "28707.43"
+   ],
+   "expect": "Under 28707.43 g with a 554.66 g envelope, 29 sheets of 952.84 g fit, leaving 520.41 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "605.56",
+    "574.94",
+    "63341.17"
+   ],
+   "expect": "Under 63341.17 g with a 574.94 g envelope, 103 sheets of 605.56 g fit, leaving 393.55 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "670.27",
+    "84.96",
+    "79103.07"
+   ],
+   "expect": "Under 79103.07 g with a 84.96 g envelope, 117 sheets of 670.27 g fit, leaving 596.52 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "58.07",
+    "436.05",
+    "98196.86"
+   ],
+   "expect": "Under 98196.86 g with a 436.05 g envelope, 1683 sheets of 58.07 g fit, leaving 29 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "404.8",
+    "836.19",
+    "82711.52"
+   ],
+   "expect": "Under 82711.52 g with a 836.19 g envelope, 202 sheets of 404.8 g fit, leaving 105.73 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "637.57",
+    "852.75",
+    "56742.96"
+   ],
+   "expect": "Under 56742.96 g with a 852.75 g envelope, 87 sheets of 637.57 g fit, leaving 421.62 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "314.38",
+    "123.26",
+    "51544.66"
+   ],
+   "expect": "Under 51544.66 g with a 123.26 g envelope, 163 sheets of 314.38 g fit, leaving 177.46 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "90.15",
+    "650.35",
+    "18797.6"
+   ],
+   "expect": "Under 18797.6 g with a 650.35 g envelope, 201 sheets of 90.15 g fit, leaving 27.1 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "566.98",
+    "4.23",
+    "93755.99"
+   ],
+   "expect": "Under 93755.99 g with a 4.23 g envelope, 165 sheets of 566.98 g fit, leaving 200.06 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "466.88",
+    "769.22",
+    "98655.22"
+   ],
+   "expect": "Under 98655.22 g with a 769.22 g envelope, 209 sheets of 466.88 g fit, leaving 308.08 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "360.24",
+    "962.16",
+    "33833.32"
+   ],
+   "expect": "Under 33833.32 g with a 962.16 g envelope, 91 sheets of 360.24 g fit, leaving 89.32 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "8.66",
+    "32.01",
+    "330.74"
+   ],
+   "expect": "Under 330.74 g with a 32.01 g envelope, 34 sheets of 8.66 g fit, leaving 4.29 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "14.16",
+    "19.47",
+    "946.35"
+   ],
+   "expect": "Under 946.35 g with a 19.47 g envelope, 65 sheets of 14.16 g fit, leaving 6.48 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "0.99",
+    "9.84",
+    "895.69"
+   ],
+   "expect": "Under 895.69 g with a 9.84 g envelope, 894 sheets of 0.99 g fit, leaving 0.79 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "9.79",
+    "22.46",
+    "807.3"
+   ],
+   "expect": "Under 807.3 g with a 22.46 g envelope, 80 sheets of 9.79 g fit, leaving 1.64 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "13.51",
+    "44.95",
+    "919.32"
+   ],
+   "expect": "Under 919.32 g with a 44.95 g envelope, 64 sheets of 13.51 g fit, leaving 9.73 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "13.56",
+    "38.73",
+    "796.18"
+   ],
+   "expect": "Under 796.18 g with a 38.73 g envelope, 55 sheets of 13.56 g fit, leaving 11.65 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "18.66",
+    "16.25",
+    "642.1"
+   ],
+   "expect": "Under 642.1 g with a 16.25 g envelope, 33 sheets of 18.66 g fit, leaving 10.07 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "0.41",
+    "22.94",
+    "725.04"
+   ],
+   "expect": "Under 725.04 g with a 22.94 g envelope, 1712 sheets of 0.41 g fit, leaving 0.18 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "6.81",
+    "31.83",
+    "195.52"
+   ],
+   "expect": "Under 195.52 g with a 31.83 g envelope, 24 sheets of 6.81 g fit, leaving 0.25 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "15.85",
+    "12.24",
+    "1005.92"
+   ],
+   "expect": "Under 1005.92 g with a 12.24 g envelope, 62 sheets of 15.85 g fit, leaving 10.98 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "9.91",
+    "10.75",
+    "275.82"
+   ],
+   "expect": "Under 275.82 g with a 10.75 g envelope, 26 sheets of 9.91 g fit, leaving 7.41 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "17.11",
+    "9.89",
+    "711.14"
+   ],
+   "expect": "Under 711.14 g with a 9.89 g envelope, 40 sheets of 17.11 g fit, leaving 16.85 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "18.6",
+    "14.39",
+    "280.35"
+   ],
+   "expect": "Under 280.35 g with a 14.39 g envelope, 14 sheets of 18.6 g fit, leaving 5.56 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "16.26",
+    "36.1",
+    "351.79"
+   ],
+   "expect": "Under 351.79 g with a 36.1 g envelope, 19 sheets of 16.26 g fit, leaving 6.75 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "8.37",
+    "11.29",
+    "317.61"
+   ],
+   "expect": "Under 317.61 g with a 11.29 g envelope, 36 sheets of 8.37 g fit, leaving 5 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "19.61",
+    "9.04",
+    "99.77"
+   ],
+   "expect": "Under 99.77 g with a 9.04 g envelope, 4 sheets of 19.61 g fit, leaving 12.29 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "8.39",
+    "3.02",
+    "52.14"
+   ],
+   "expect": "Under 52.14 g with a 3.02 g envelope, 5 sheets of 8.39 g fit, leaving 7.17 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "5.29",
+    "35.42",
+    "66.27"
+   ],
+   "expect": "Under 66.27 g with a 35.42 g envelope, 5 sheets of 5.29 g fit, leaving 4.4 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "2.52",
+    "7.2",
+    "866.74"
+   ],
+   "expect": "Under 866.74 g with a 7.2 g envelope, 341 sheets of 2.52 g fit, leaving 0.22 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "1.42",
+    "2.51",
+    "410.79"
+   ],
+   "expect": "Under 410.79 g with a 2.51 g envelope, 287 sheets of 1.42 g fit, leaving 0.74 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "18.26",
+    "41.67",
+    "637.47"
+   ],
+   "expect": "Under 637.47 g with a 41.67 g envelope, 32 sheets of 18.26 g fit, leaving 11.48 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "16.91",
+    "2.8",
+    "550.99"
+   ],
+   "expect": "Under 550.99 g with a 2.8 g envelope, 32 sheets of 16.91 g fit, leaving 7.07 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "4.92",
+    "18.43",
+    "712.31"
+   ],
+   "expect": "Under 712.31 g with a 18.43 g envelope, 141 sheets of 4.92 g fit, leaving 0.16 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "12.9",
+    "5",
+    "754.22"
+   ],
+   "expect": "Under 754.22 g with a 5 g envelope, 58 sheets of 12.9 g fit, leaving 1.02 g."
+  },
+  {
+   "fn": "sheets",
+   "args": [
+    "1.53",
+    "0.86",
+    "601.98"
+   ],
+   "expect": "Under 601.98 g with a 0.86 g envelope, 392 sheets of 1.53 g fit, leaving 1.36 g."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "712107",
+    "28826.9"
+   ],
+   "expect": "The 712107 pieces at 28826.9 g weigh 20527837278.3 g, or 20527837.28 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "317255",
+    "58799.96"
+   ],
+   "expect": "The 317255 pieces at 58799.96 g weigh 18654581309.8 g, or 18654581.31 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "908719",
+    "17081.64"
+   ],
+   "expect": "The 908719 pieces at 17081.64 g weigh 15522410819.16 g, or 15522410.82 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "315231",
+    "25434.7"
+   ],
+   "expect": "The 315231 pieces at 25434.7 g weigh 8017805915.7 g, or 8017805.92 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "699826",
+    "62574.09"
+   ],
+   "expect": "The 699826 pieces at 62574.09 g weigh 43790975108.34 g, or 43790975.11 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "743247",
+    "47816.35"
+   ],
+   "expect": "The 743247 pieces at 47816.35 g weigh 35539358688.45 g, or 35539358.69 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "523040",
+    "82082.92"
+   ],
+   "expect": "The 523040 pieces at 82082.92 g weigh 42932650476.8 g, or 42932650.48 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "686684",
+    "48752.46"
+   ],
+   "expect": "The 686684 pieces at 48752.46 g weigh 33477534242.64 g, or 33477534.24 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "715361",
+    "9914.76"
+   ],
+   "expect": "The 715361 pieces at 9914.76 g weigh 7092632628.36 g, or 7092632.63 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "561076",
+    "93532.93"
+   ],
+   "expect": "The 561076 pieces at 93532.93 g weigh 52479082232.68 g, or 52479082.23 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "785640",
+    "18731.92"
+   ],
+   "expect": "The 785640 pieces at 18731.92 g weigh 14716545628.8 g, or 14716545.63 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "529972",
+    "56148.32"
+   ],
+   "expect": "The 529972 pieces at 56148.32 g weigh 29757037447.04 g, or 29757037.45 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "193918",
+    "2468.13"
+   ],
+   "expect": "The 193918 pieces at 2468.13 g weigh 478614833.34 g, or 478614.83 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "842504",
+    "55623.58"
+   ],
+   "expect": "The 842504 pieces at 55623.58 g weigh 46863088644.32 g, or 46863088.64 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "538034",
+    "85456.74"
+   ],
+   "expect": "The 538034 pieces at 85456.74 g weigh 45978631649.16 g, or 45978631.65 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "173322",
+    "21826.49"
+   ],
+   "expect": "The 173322 pieces at 21826.49 g weigh 3783010899.78 g, or 3783010.9 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "845905",
+    "58421.19"
+   ],
+   "expect": "The 845905 pieces at 58421.19 g weigh 49418776726.95 g, or 49418776.73 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "34015",
+    "9113.9"
+   ],
+   "expect": "The 34015 pieces at 9113.9 g weigh 310009308.5 g, or 310009.31 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "714484",
+    "20612.98"
+   ],
+   "expect": "The 714484 pieces at 20612.98 g weigh 14727644402.32 g, or 14727644.4 kg."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "21453",
+    "44051.34"
+   ],
+   "expect": "The 21453 pieces at 44051.34 g weigh 945033397.02 g, or 945033.4 kg."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "799607",
+    "6361.42"
+   ],
+   "expect": "The 799607 pieces at $6361.42 cost $5086635961.94 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "514395",
+    "1289.16"
+   ],
+   "expect": "The 514395 pieces at $1289.16 cost $663137458.20 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "19324",
+    "5419.23"
+   ],
+   "expect": "The 19324 pieces at $5419.23 cost $104721200.52 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "334315",
+    "2444.25"
+   ],
+   "expect": "The 334315 pieces at $2444.25 cost $817149438.75 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "228680",
+    "4771.05"
+   ],
+   "expect": "The 228680 pieces at $4771.05 cost $1091043714.00 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "218977",
+    "5792.93"
+   ],
+   "expect": "The 218977 pieces at $5792.93 cost $1268518432.61 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "152450",
+    "1293.41"
+   ],
+   "expect": "The 152450 pieces at $1293.41 cost $197180354.50 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "652282",
+    "8709.89"
+   ],
+   "expect": "The 652282 pieces at $8709.89 cost $5681304468.98 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "854014",
+    "6924.48"
+   ],
+   "expect": "The 854014 pieces at $6924.48 cost $5913602862.72 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "329566",
+    "6573.12"
+   ],
+   "expect": "The 329566 pieces at $6573.12 cost $2166276865.92 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "245775",
+    "1329.63"
+   ],
+   "expect": "The 245775 pieces at $1329.63 cost $326789813.25 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "449438",
+    "547.49"
+   ],
+   "expect": "The 449438 pieces at $547.49 cost $246062810.62 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "997209",
+    "672.66"
+   ],
+   "expect": "The 997209 pieces at $672.66 cost $670782605.94 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "299600",
+    "4798.12"
+   ],
+   "expect": "The 299600 pieces at $4798.12 cost $1437516752.00 in postage."
+  },
+  {
+   "fn": "postage",
+   "args": [
+    "524371",
+    "6784.88"
+   ],
+   "expect": "The 524371 pieces at $6784.88 cost $3557794310.48 in postage."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "981110",
+    "38382"
+   ],
+   "expect": "The 981110 pieces in trays of 38382 takes 26 trays, leaving 16822 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "906293",
+    "42692"
+   ],
+   "expect": "The 906293 pieces in trays of 42692 takes 22 trays, leaving 32931 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "536292",
+    "41809"
+   ],
+   "expect": "The 536292 pieces in trays of 41809 takes 13 trays, leaving 7225 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "583966",
+    "66909"
+   ],
+   "expect": "The 583966 pieces in trays of 66909 takes 9 trays, leaving 18215 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "183410",
+    "93258"
+   ],
+   "expect": "The 183410 pieces in trays of 93258 takes 2 trays, leaving 3106 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "800228",
+    "64959"
+   ],
+   "expect": "The 800228 pieces in trays of 64959 takes 13 trays, leaving 44239 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "204538",
+    "1999"
+   ],
+   "expect": "The 204538 pieces in trays of 1999 takes 103 trays, leaving 1359 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "342389",
+    "58696"
+   ],
+   "expect": "The 342389 pieces in trays of 58696 takes 6 trays, leaving 9787 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "964358",
+    "58532"
+   ],
+   "expect": "The 964358 pieces in trays of 58532 takes 17 trays, leaving 30686 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "196752",
+    "40854"
+   ],
+   "expect": "The 196752 pieces in trays of 40854 takes 5 trays, leaving 7518 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "697605",
+    "62195"
+   ],
+   "expect": "The 697605 pieces in trays of 62195 takes 12 trays, leaving 48735 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "614313",
+    "37006"
+   ],
+   "expect": "The 614313 pieces in trays of 37006 takes 17 trays, leaving 14789 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "729906",
+    "31645"
+   ],
+   "expect": "The 729906 pieces in trays of 31645 takes 24 trays, leaving 29574 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "30309",
+    "97596"
+   ],
+   "expect": "The 30309 pieces in trays of 97596 takes 1 tray, leaving 67287 spaces in the last one."
+  },
+  {
+   "fn": "tray",
+   "args": [
+    "111363",
+    "54239"
+   ],
+   "expect": "The 111363 pieces in trays of 54239 takes 3 trays, leaving 51354 spaces in the last one."
+  }
+ ],
+ "errors": [
+  [
+   "sheets",
+   [
+    "0",
+    "6",
+    "28"
+   ]
+  ],
+  [
+   "sheets",
+   [
+    "4.5",
+    "0",
+    "28"
+   ]
+  ],
+  [
+   "sheets",
+   [
+    "4.5",
+    "6",
+    "0"
+   ]
+  ],
+  [
+   "sheets",
+   [
+    "4.555",
+    "6",
+    "28"
+   ]
+  ],
+  [
+   "batch",
+   [
+    "0",
+    "28.5"
+   ]
+  ],
+  [
+   "batch",
+   [
+    "120",
+    "0"
+   ]
+  ],
+  [
+   "postage",
+   [
+    "0",
+    "0.73"
+   ]
+  ],
+  [
+   "postage",
+   [
+    "120",
+    "0"
+   ]
+  ],
+  [
+   "tray",
+   [
+    "0",
+    "50"
+   ]
+  ],
+  [
+   "tray",
+   [
+    "120",
+    "0"
+   ]
+  ],
+  [
+   "postage",
+   [
+    "120",
+    "0.733"
+   ]
+  ],
+  [
+   "tray",
+   [
+    "120",
+    "100001"
+   ]
+  ]
+ ]
+}
