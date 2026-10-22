@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mail Math - app</title>
+<style>
+  :root { --accent:#3f5b73; --ink:#16202a; --paper:#f4f6f8; --soft:#e2e9ef; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #9fb2c2; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #9fb2c2; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#5f7284; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mail Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts mail with division and rounding: the sheets an envelope takes under a weight limit, the weight of a batch, the postage of a batch, and the trays it fills. The sheet, envelope and piece weights, the weight limit, the rate and the tray size are yours to weigh and read off your own scale and rate sheet. It applies the counting as written, so it has not seen your mailing and does not know your carrier's rules, rates, size limits or surcharges, and it gives no verdict that a mailing qualifies for a rate or will be accepted. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The sheets truth</h2>
+    <p class="note">Sheets: the limit minus the envelope, divided by the sheet weight, rounded down.</p>
+    <div class="row2"><div><label for="s-s">Sheet weight (g)</label><input id="s-s" type="text" value="4.5"></div><div><label for="s-e">Envelope weight (g)</label><input id="s-e" type="text" value="6"></div></div>
+    <div class="row2"><div><label for="s-l">Weight limit (g)</label><input id="s-l" type="text" value="28"></div></div>
+    <div class="out" id="s-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The batch truth</h2>
+    <p class="note">Batch: the pieces times the piece weight, in grams and kilograms.</p>
+    <div class="row2"><div><label for="b-n">Pieces</label><input id="b-n" type="text" value="120"></div><div><label for="b-g">Piece weight (g)</label><input id="b-g" type="text" value="28.5"></div></div>
+    <div class="out" id="b-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The postage truth</h2>
+    <p class="note">Postage: the pieces times the rate for each.</p>
+    <div class="row2"><div><label for="p-n">Pieces</label><input id="p-n" type="text" value="120"></div><div><label for="p-r">Rate each (dollars)</label><input id="p-r" type="text" value="0.73"></div></div>
+    <div class="out" id="p-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The tray truth</h2>
+    <p class="note">Trays: the pieces divided by the pieces a tray, rounded up.</p>
+    <div class="row2"><div><label for="t-n">Pieces</label><input id="t-n" type="text" value="120"></div><div><label for="t-p">Pieces a tray</label><input id="t-p" type="text" value="50"></div></div>
+    <div class="out" id="t-out"></div>
+  </div>
+
+  <footer>Mail Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("s-out", () => sheetsTruth(v("s-s"), v("s-e"), v("s-l")));
+    show("b-out", () => batchTruth(v("b-n"), v("b-g")));
+    show("p-out", () => postageTruth(v("p-n"), v("p-r")));
+    show("t-out", () => trayTruth(v("t-n"), v("t-p")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
